@@ -1,0 +1,82 @@
+| event_message                                                                                                                                          | event_type | function_id                          | id                                   | level | timestamp        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------------------------------------ | ------------------------------------ | ----- | ---------------- |
+| shutdown                                                                                                                                               | Shutdown   | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | abbe77e8-c2d7-4ebe-847e-ae5b63df5001 | log   | 1762886901133000 |
+| ❌ Cron job error: {
+  code: "42703",
+  details: null,
+  hint: null,
+  message: "column agent_configs.autonomy_policies does not exist"
+}
+              | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 210c81f7-3f29-4896-adb7-6232b7b97f2d | error | 1762886701379000 |
+| Failed to fetch active agents: {
+  code: "42703",
+  details: null,
+  hint: null,
+  message: "column agent_configs.autonomy_policies does not exist"
+}
+ | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 7b90cc30-96fd-4e16-b65e-20bba8055712 | error | 1762886701378000 |
+| 🤖 Agent Sophia Cron: Starting multi-user orchestration...
+                                                                                            | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | db0a096b-ee96-43ae-b2ad-dfe061482ce2 | info  | 1762886701206000 |
+| Listening on http://localhost:9999/
+                                                                                                                   | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 19ccfce1-d4fb-4683-8d20-2d87d4829c7e | info  | 1762886701117000 |
+| booted (time: 158ms)                                                                                                                                   | Boot       | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 708099a7-d636-415d-9e13-c1fb796fcc6f | log   | 1762886701114000 |
+| shutdown                                                                                                                                               | Shutdown   | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | e1e7a90a-cc2a-45ca-afd2-a02d3d54b6cb | log   | 1762886657484000 |
+| ❌ Cron job error: {
+  code: "42703",
+  details: null,
+  hint: null,
+  message: "column agent_configs.autonomy_policies does not exist"
+}
+              | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 01b442c0-75b5-4a9e-bb35-41fcf6872b95 | error | 1762886457645000 |
+| Failed to fetch active agents: {
+  code: "42703",
+  details: null,
+  hint: null,
+  message: "column agent_configs.autonomy_policies does not exist"
+}
+ | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 09672634-56b5-4691-b0ab-969dd7ff2cd2 | error | 1762886457645000 |
+| 🤖 Agent Sophia Cron: Starting multi-user orchestration...
+                                                                                            | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 5eb004f2-bd38-4cb3-8a47-9e2f2894ec46 | info  | 1762886457480000 |
+| Listening on http://localhost:9999/
+                                                                                                                   | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 76626e78-ece8-473c-bff3-838bcbe3e983 | info  | 1762886457475000 |
+| booted (time: 31ms)                                                                                                                                    | Boot       | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | d350f67a-41fd-457f-bd19-b1751694bf9e | log   | 1762886457472000 |
+| shutdown                                                                                                                                               | Shutdown   | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 1aa671e0-cedd-4677-9ce9-05dd378239e9 | log   | 1762886001289000 |
+| ❌ Cron job error: {
+  code: "42703",
+  details: null,
+  hint: null,
+  message: "column agent_configs.autonomy_policies does not exist"
+}
+              | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | a7fc0d50-8e5b-414a-b9c3-8e382ee37817 | error | 1762885801439000 |
+| Failed to fetch active agents: {
+  code: "42703",
+  details: null,
+  hint: null,
+  message: "column agent_configs.autonomy_policies does not exist"
+}
+ | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 37c2f09a-607b-4ade-930d-33ceec1f0cfa | error | 1762885801439000 |
+| 🤖 Agent Sophia Cron: Starting multi-user orchestration...
+                                                                                            | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 41b29514-48e4-4ca8-9664-0541dde1866f | info  | 1762885801298000 |
+| Listening on http://localhost:9999/
+                                                                                                                   | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | e4e1b29e-0c23-4203-9b16-1a249f460ad1 | info  | 1762885801270000 |
+| booted (time: 84ms)                                                                                                                                    | Boot       | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 89b94bee-74df-4f19-9b8d-870b4154b01a | log   | 1762885801261000 |
+| shutdown                                                                                                                                               | Shutdown   | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | f0fd9407-a1ce-44ae-b17c-3333f6e3a025 | log   | 1762885101164000 |
+| Failed to fetch active agents: {
+  code: "42703",
+  details: null,
+  hint: null,
+  message: "column agent_configs.autonomy_policies does not exist"
+}
+ | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | ad9ca129-5347-436c-b9c7-1043bc9e5317 | error | 1762884901474000 |
+| ❌ Cron job error: {
+  code: "42703",
+  details: null,
+  hint: null,
+  message: "column agent_configs.autonomy_policies does not exist"
+}
+              | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | bc750a00-0059-4f96-9078-36b3afa00493 | error | 1762884901474000 |
+| 🤖 Agent Sophia Cron: Starting multi-user orchestration...
+                                                                                            | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | e0b80003-ceee-4410-8dbb-94d1e954fdb9 | info  | 1762884901232000 |
+| Listening on http://localhost:9999/
+                                                                                                                   | Log        | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 62ca077b-e08c-4f25-8ebc-7fa1f85140ae | info  | 1762884901138000 |
+| booted (time: 239ms)                                                                                                                                   | Boot       | 9e2cebdc-8f5d-44d0-95b1-a1dfe0e2ea74 | 3c605245-e266-4400-b1a5-0058d117bb74 | log   | 1762884901135000 |

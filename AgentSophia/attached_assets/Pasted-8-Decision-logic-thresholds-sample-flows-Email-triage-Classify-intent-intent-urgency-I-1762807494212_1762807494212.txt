@@ -1,0 +1,58 @@
+8 — Decision logic & thresholds (sample flows)
+
+Email triage:
+
+Classify intent (intent, urgency).
+
+If spam → archive/move to junk.
+
+Else if low complexity request AND confidence >= 0.85 AND policy.autoReply = true → send auto reply via selected template.
+
+Else if meeting request:
+
+If internal AND policy.meetingAutoAccept.internal = true → accept.
+
+If external AND policy.meetingAutoAccept.external = false → propose times or ask for approval.
+
+Else if sensitive content → queue for manual review.
+
+Meeting handling:
+
+New meeting invite: run calendar conflict check, attendee-level policy, DLP check for attachments. If accept, create acceptance reply and add to calendar. If decline, send polite decline with reason. If tentative → set tentative and notify owner.
+
+Confidence scoring:
+
+Combine classifier confidence + LLM generation quality metrics + policy violation checks → final confidence.
+
+Explainability:
+
+For every action save:
+
+classifier: {"intent":"request_info","score":0.92}
+
+llm_output_summary
+
+policy_checks_passed: true
+
+final_decision: "auto-reply-sent"
+
+timestamp, actor, graph_request_id
+
+9 — Prompt & template strategy (safe, auditable)
+
+Keep LLM prompts templated and small. Example template for external meeting decline:
+
+Prompt to LLM (structured):
+
+SYSTEM: You are Sofia, an assistant representing {user_name}. Always be polite, concise (<= 3 sentences), never disclose private company info or attachments, and include user signature {user_signature}. Use variables.
+
+CONTEXT: Sender: {sender_name} ({sender_email}). Subject: {subject}. Meeting time: {time}. Reason (if any): {reason}.
+
+INSTRUCTION: Generate a decline message offering alternative times in user's timezone or propose "Please share available times". Keep answer short. Avoid commitments. End with signature.
+
+
+Sample auto-reply:
+
+Hi Alex — thanks for the invite. I’m unavailable at that time; could we try Tue or Thu morning next week? Best, Ryan (on behalf of Ryan Williams)
+
+Templates stored centrally with allowed variables; admin-managed.

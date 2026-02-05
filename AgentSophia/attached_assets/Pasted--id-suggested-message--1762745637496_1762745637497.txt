@@ -1,0 +1,20 @@
+| id                                   | suggested_message                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | message_content | metadata                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 16e07f9a-8750-4621-86b8-6b16776e92f7 | Subject: Exploring Opportunities for Collaboration
+
+Hi Ryan,
+
+Thank you for sharing your contact information. As the Global Director of Sales & Resource Management at UshankTech, I believe there might be some exciting opportunities for us to collaborate. 
+
+We specialize in [briefly describe relevant service or product], which could greatly benefit your team. I'd love to schedule a call to discuss how we can support your sales strategy and resource management needs.
+
+Could you let me know a convenient time for us to connect?
+
+Looking forward to your response.
+
+Best regards,
+
+[Your Name]
+[Your Position]
+[Your Company]
+[Your Contact Information] | null            | {"ai_model":"gpt-4o","ai_reasoning":"The prospect provided detailed contact information, which indicates a potential interest in discussing further. However, no explicit request to meet was made.","decision_type":"send_follow_up","prospect_name":"Ryan Williams","prospect_email":"ryan.williams@ushanktech.com","intent_detected":"interested","confidence_score":0.8,"is_unknown_sender":true,"analysis_timestamp":"2025-11-10T03:30:57.588Z"} |

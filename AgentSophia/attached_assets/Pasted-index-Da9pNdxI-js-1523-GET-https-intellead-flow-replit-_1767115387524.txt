@@ -1,0 +1,135 @@
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/state 502 (Bad Gateway)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/predictive/autonomy-settings 502 (Bad Gateway)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/predictive/autonomy-settings 502 (Bad Gateway)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/state 502 (Bad Gateway)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/predictive/autonomy-settings 502 (Bad Gateway)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/state 502 (Bad Gateway)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+stream:1  GET https://intellead-flow.replit.app/api/sophia/workspaces/eaeb4b98-1ee7-46ce-b404-48e90584dd16/activity/stream 502 (Bad Gateway)Understand this error
+stream:1  GET https://intellead-flow.replit.app/api/sophia/workspaces/eaeb4b98-1ee7-46ce-b404-48e90584dd16/activity/stream 502 (Bad Gateway)Understand this error
+stream:1  GET https://intellead-flow.replit.app/api/sophia/workspaces/eaeb4b98-1ee7-46ce-b404-48e90584dd16/activity/stream 500 (Internal Server Error)Understand this error
+stream:1  GET https://intellead-flow.replit.app/api/sophia/workspaces/eaeb4b98-1ee7-46ce-b404-48e90584dd16/activity/stream 503 (Service Unavailable)Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/predictive/autonomy-settings 503 (Service Unavailable)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/state 503 (Service Unavailable)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/state 503 (Service Unavailable)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/predictive/autonomy-settings 503 (Service Unavailable)
+g @ index-Da9pNdxI.js:1523
+setInterval
+(anonymous) @ index-Da9pNdxI.js:1523
+a1 @ index-Da9pNdxI.js:40
+Qh @ index-Da9pNdxI.js:40
+W$ @ index-Da9pNdxI.js:40
+Dd @ index-Da9pNdxI.js:38
+loe @ index-Da9pNdxI.js:40
+ou @ index-Da9pNdxI.js:40
+I7 @ index-Da9pNdxI.js:40
+_ @ index-Da9pNdxI.js:25
+T @ index-Da9pNdxI.js:25Understand this error
+index-Da9pNdxI.js:1523  GET https://intellead-flow.replit.app/api/sophia/workspaces/eaeb4b98-1ee7-46ce-b404-48e90584dd16/current-task 503 (Service Unavailable)

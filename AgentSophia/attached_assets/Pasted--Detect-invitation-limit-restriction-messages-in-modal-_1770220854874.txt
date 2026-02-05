@@ -1,0 +1,122 @@
+// Detect invitation limit / restriction messages in modal
+    if (modalResult.hasDialog) {
+      const dialogText = (modalResult.dialogContent || '').toLowerCase();
+      if (dialogText.includes('invitation limit') || dialogText.includes('weekly invitation') || dialogText.includes('limit')) {
+        console.log('[LinkedIn Connect] ⚠️ Invite limit or restriction detected in modal');
+        return {
+          success: false,
+          message: 'INVITE_LIMIT_REACHED: LinkedIn invite limit reached or restricted. Reduce sending or wait for reset.',
+          data: { profileUrl, reason: 'invite_limit' }
+        };
+      }
+    }
+    
+    // If we clicked send atomically, we're done!
+    if (modalResult.clickedSend) {
+      console.log('[LinkedIn Connect] ✅ Send button clicked atomically');
+      await sleep(1500); // Wait for request to process
+      
+      // Verify the modal closed and we're back on the profile
+      const postSendState = await session.page.evaluate(() => {
+        const modalVisible = !!document.querySelector('[role="dialog"]');
+        const pendingButton = document.querySelector('button[aria-label*="Pending"]');
+        const bodyText = document.body?.innerText || '';
+        const hasPending = !!pendingButton || bodyText.includes('Pending');
+        return { modalVisible, hasPending };
+      });
+      
+      console.log('[LinkedIn Connect] Post-send state:', postSendState);
+      
+      if (postSendState.hasPending) {
+        console.log('[LinkedIn Connect] ✅ VERIFIED: Connection request sent - status now shows Pending');
+        return { 
+          success: true, 
+          message: 'Connection request sent successfully (verified)',
+          data: { profileUrl, noteIncluded: false, verified: true }
+        };
+      } else if (!postSendState.modalVisible) {
+        console.log('[LinkedIn Connect] Modal closed - assuming request was sent');
+        return { 
+          success: true, 
+          message: 'Connection request sent successfully',
+          data: { profileUrl, noteIncluded: false, verified: false }
+        };
+      }
+    }
+
+    // Handle "How do you know" / relationship-required modal
+    if (modalResult.hasDialog && !modalResult.clickedSend && !effectiveNote) {
+      console.log('[LinkedIn Connect] Attempting relationship selection in modal...');
+      
+      const relationshipResult = await session.page.evaluate(() => {
+        const dialog = document.querySelector('[role="dialog"]') as HTMLElement | null;
+        if (!dialog) return { found: false };
+        
+        // Try native select first
+        const select = dialog.querySelector('select') as HTMLSelectElement | null;
+        if (select) {
+          const options = Array.from(select.options).filter(o => !o.disabled && o.value);
+          if (options.length > 0) {
+            select.value = options[0].value;
+            select.dispatchEvent(new Event('change', { bubbles: true }));
+            return { found: true, selected: options[0].textContent?.trim() || options[0].value, type: 'select' };
+          }
+        }
+        
+        // Try combobox / listbox
+        const combo = dialog.querySelector('[role="combobox"], input[role="combobox"], button[role="combobox"]') as HTMLElement | null;
+        if (combo) {
+          combo.click();
+          return { found: true, opened: true, type: 'combobox' };
+        }
+        
+        return { found: false };
+      });
+      
+      if (relationshipResult?.opened) {
+        await sleep(500);
+        const optionPick = await session.page.evaluate(() => {
+          const listbox = document.querySelector('[role="listbox"]') || document.querySelector('ul[role="listbox"]');
+          const option = (listbox?.querySelector('[role="option"]') || document.querySelector('[role="option"]')) as HTMLElement | null;
+          if (option) {
+            option.click();
+            return { selected: option.textContent?.trim() || '' };
+          }
+          return { selected: '' };
+        });
+        if (optionPick?.selected) {
+          console.log('[LinkedIn Connect] Selected relationship option:', optionPick.selected);
+        }
+      } else if (relationshipResult?.selected) {
+        console.log('[LinkedIn Connect] Selected relationship option:', relationshipResult.selected);
+      }
+      
+      // Try send after relationship selection
+      await sleep(500);
+      const sendAfterRelationship = await session.page.evaluate(() => {
+        const sendBtn = (document.querySelector('button[aria-label="Send now"]') || 
+                        document.querySelector('button[aria-label="Send invitation"]') ||
+                        document.querySelector('button[aria-label="Send without a note"]') ||
+                        document.querySelector('[role="dialog"] button.artdeco-button--primary')) as HTMLButtonElement | null;
+        if (sendBtn && !sendBtn.disabled) {
+          sendBtn.click();
+          return { clicked: true, disabled: false };
+        }
+        return { clicked: false, disabled: sendBtn?.disabled ?? null };
+      });
+      
+      if (sendAfterRelationship.clicked) {
+        console.log('[LinkedIn Connect] ✅ Sent after relationship selection');
+        await sleep(1500);
+        return { 
+          success: true, 
+          message: 'Connection request sent successfully',
+          data: { profileUrl, noteIncluded: false, verified: false }
+        };
+      }
+      
+      if (sendAfterRelationship.disabled) {
+        console.log('[LinkedIn Connect] Send button disabled after relationship selection');
+      }
+    }
+    

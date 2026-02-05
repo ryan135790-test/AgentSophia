@@ -1,0 +1,34 @@
+index-CspjBC5j.js:1041  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/agent_activities?select=id%2Cactivity_type%2Caction_taken%2Coutcome%2Ccontact_id%2Ccreated_at%2Cmetadata&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&is_autonomous=eq.true&order=created_at.desc&limit=20 400 (Bad Request)
+(anonymous) @ index-CspjBC5j.js:1041
+(anonymous) @ index-CspjBC5j.js:1041
+l @ index-CspjBC5j.js:1041
+Promise.then
+d @ index-CspjBC5j.js:1041
+(anonymous) @ index-CspjBC5j.js:1041
+i6e @ index-CspjBC5j.js:1041
+(anonymous) @ index-CspjBC5j.js:1041
+then @ index-CspjBC5j.js:1019Understand this error
+index-CspjBC5j.js:1041  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/agent_activities?select=id%2Cactivity_type%2Caction_taken%2Coutcome%2Ccontact_id%2Ccreated_at%2Cmetadata&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&is_autonomous=eq.true&order=created_at.desc&limit=20 400 (Bad Request)
+(anonymous) @ index-CspjBC5j.js:1041
+(anonymous) @ index-CspjBC5j.js:1041
+l @ index-CspjBC5j.js:1041
+Promise.then
+d @ index-CspjBC5j.js:1041
+(anonymous) @ index-CspjBC5j.js:1041
+i6e @ index-CspjBC5j.js:1041
+(anonymous) @ index-CspjBC5j.js:1041
+then @ index-CspjBC5j.js:1019Understand this error
+index-CspjBC5j.js:1041  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/agent_activities?select=*&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&is_autonomous=eq.true&order=created_at.desc&limit=5 400 (Bad Request)
+(anonymous) @ index-CspjBC5j.js:1041
+(anonymous) @ index-CspjBC5j.js:1041
+l @ index-CspjBC5j.js:1041
+Promise.then
+d @ index-CspjBC5j.js:1041
+(anonymous) @ index-CspjBC5j.js:1041
+i6e @ index-CspjBC5j.js:1041
+(anonymous) @ index-CspjBC5j.js:1041
+then @ index-CspjBC5j.js:1019Understand this error
+index-CspjBC5j.js:1531 [LeadSourceSelector] handleSearch called - source: linkedin_search workspaceId: eaeb4b98-1ee7-46ce-b404-48e90584dd16 accountId: af0c88b2-87ca-4ad6-93f0-741c9b524acc
+index-CspjBC5j.js:1531 [LeadSourceSelector] Calling linkedInSearchMutation.mutate
+index-CspjBC5j.js:1530 [LeadSourceSelector] LinkedIn search mutation called with: {workspaceId: 'eaeb4b98-1ee7-46ce-b404-48e90584dd16', accountId: 'af0c88b2-87ca-4ad6-93f0-741c9b524acc', criteria: {…}, maxResults: 25}
+index-CspjBC5j.js:1530 [LeadSourceSelector] LinkedIn search response: {success: true, job: {…}, stats: {…}}

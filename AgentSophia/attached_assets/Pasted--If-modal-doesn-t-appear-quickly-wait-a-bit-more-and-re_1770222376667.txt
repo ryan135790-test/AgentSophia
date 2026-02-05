@@ -1,0 +1,111 @@
+// If modal doesn't appear quickly, wait a bit more and re-check
+    const preModalState = await session.page.evaluate(() => {
+      const dialog = document.querySelector('[role="dialog"]');
+      const pendingButton = document.querySelector('button[aria-label*="Pending"]');
+      const bodyText = document.body?.innerText || '';
+      const hasPending = !!pendingButton || bodyText.includes('Pending');
+      const alerts = Array.from(document.querySelectorAll('[role="alert"], .artdeco-toast-item, .artdeco-toast'))
+        .map(el => el.textContent?.trim() || '')
+        .filter(t => t.length > 0)
+        .slice(0, 2);
+      return { hasDialog: !!dialog, hasPending, alerts };
+    });
+    
+    if (!preModalState.hasDialog && !preModalState.hasPending) {
+      await sleep(1500);
+    }
+    
+    // Check if the connection modal appeared AND immediately try to click Send
+    // This is atomic to avoid timing issues where modal changes between check and click
+    const modalResult = await session.page.evaluate((noteToAdd: string | null) => {
+      const addNoteBtn = document.querySelector('button[aria-label="Add a note"]') as HTMLElement | null;
+      const sendNowBtn = (document.querySelector('button[aria-label="Send now"]') || 
+                         document.querySelector('button[aria-label="Send invitation"]') ||
+                         document.querySelector('button[aria-label="Send without a note"]')) as HTMLElement | null;
+      const modalHeader = document.querySelector('[role="dialog"] h2, [role="dialog"] h3');
+      const anyDialog = document.querySelector('[role="dialog"]');
+      
+      // Also look for send buttons by text content in case aria-labels don't match
+      let sendBtnByText: HTMLElement | null = null;
+      if (!sendNowBtn && anyDialog) {
+        const buttons = anyDialog.querySelectorAll('button');
+        for (const btn of buttons) {
+          const text = btn.textContent?.toLowerCase().trim() || '';
+          if (text === 'send' || text === 'send now' || text.includes('send without') || text === 'send invitation') {
+            sendBtnByText = btn as HTMLElement;
+            break;
+          }
+        }
+      }
+      
+      const effectiveSendBtn = sendNowBtn || sendBtnByText;
+      
+      const dialogContent = anyDialog?.textContent || '';
+      const lowerDialog = dialogContent.toLowerCase();
+      const requiresEmail = !!anyDialog?.querySelector('input[type="email"], input[name*="email"], input[id*="email"]');
+      const limitDetected = lowerDialog.includes('invitation limit') || lowerDialog.includes('weekly invitation') || lowerDialog.includes('limit');
+      const restrictionDetected = lowerDialog.includes('restricted') || lowerDialog.includes('unusual activity') || lowerDialog.includes('verify') || lowerDialog.includes('checkpoint');
+      
+      const result = {
+        hasAddNote: !!addNoteBtn,
+        hasSendNow: !!effectiveSendBtn,
+        modalHeaderText: modalHeader?.textContent?.trim() || '',
+        hasDialog: !!anyDialog,
+        dialogContent: dialogContent.substring(0, 600),
+        requiresEmail,
+        limitDetected,
+        restrictionDetected,
+        clickedSend: false,
+        addedNote: false,
+        error: ''
+      };
+      
+      // If modal has send button and we don't need to add a note, click immediately
+      if (effectiveSendBtn && !noteToAdd) {
+        try {
+          effectiveSendBtn.click();
+          result.clickedSend = true;
+        } catch (e) {
+          result.error = `Failed to click send: ${e}`;
+        }
+      }
+      
+      // If we need to add a note, click Add Note first
+      if (addNoteBtn && noteToAdd) {
+        try {
+          addNoteBtn.click();
+          result.addedNote = true;
+        } catch (e) {
+          result.error = `Failed to click add note: ${e}`;
+        }
+      }
+      
+      return result;
+    }, effectiveNote || null);
+    
+    console.log('[LinkedIn Connect] Modal result:', JSON.stringify(modalResult));
+    
+    // If LinkedIn is asking for email or has restrictions, surface a specific error
+    if (modalResult.requiresEmail) {
+      return {
+        success: false,
+        message: 'INVITE_REQUIRES_EMAIL: LinkedIn requires an email address to connect for this profile.',
+        data: { profileUrl, reason: 'requires_email', dialog: modalResult.dialogContent }
+      };
+    }
+    if (modalResult.restrictionDetected) {
+      return {
+        success: false,
+        message: 'INVITE_RESTRICTED: LinkedIn is restricting this action (verification/checkpoint required).',
+        data: { profileUrl, reason: 'restricted', dialog: modalResult.dialogContent }
+      };
+    }
+    if (modalResult.limitDetected) {
+      return {
+        success: false,
+        message: 'INVITE_LIMIT_REACHED: LinkedIn invite limit reached or restricted. Reduce sending or wait for reset.',
+        data: { profileUrl, reason: 'invite_limit', dialog: modalResult.dialogContent }
+      };
+    }
+    
+    // Detect invitation limit / restriction messages in modal

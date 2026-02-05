@@ -1,0 +1,34 @@
+index-C_vwvWcV.js:1041  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/connector_configs?select=*&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&workspace_id=eq.eaeb4b98-1ee7-46ce-b404-48e90584dd16 400 (Bad Request)
+(anonymous) @ index-C_vwvWcV.js:1041
+(anonymous) @ index-C_vwvWcV.js:1041
+l @ index-C_vwvWcV.js:1041
+Promise.then
+d @ index-C_vwvWcV.js:1041
+(anonymous) @ index-C_vwvWcV.js:1041
+i6e @ index-C_vwvWcV.js:1041
+(anonymous) @ index-C_vwvWcV.js:1041
+then @ index-C_vwvWcV.js:1019Understand this error
+index-C_vwvWcV.js:1457 ConnectorService: workspace_id column not found, falling back to user-only query
+getUserConfig @ index-C_vwvWcV.js:1457
+await in getUserConfig
+queryFn @ index-C_vwvWcV.js:1538
+i @ index-C_vwvWcV.js:921
+g @ index-C_vwvWcV.js:921
+start @ index-C_vwvWcV.js:921
+fetch @ index-C_vwvWcV.js:921
+Gx @ index-C_vwvWcV.js:921
+setOptions @ index-C_vwvWcV.js:921
+(anonymous) @ index-C_vwvWcV.js:921
+a1 @ index-C_vwvWcV.js:40
+Jh @ index-C_vwvWcV.js:40
+(anonymous) @ index-C_vwvWcV.js:40
+_ @ index-C_vwvWcV.js:25
+T @ index-C_vwvWcV.js:25Understand this warning
+index-C_vwvWcV.js:1531 [LeadSourceSelector] handleSearch called - source: linkedin_search workspaceId: eaeb4b98-1ee7-46ce-b404-48e90584dd16 accountId: af0c88b2-87ca-4ad6-93f0-741c9b524acc
+index-C_vwvWcV.js:1531 [LeadSourceSelector] Calling linkedInSearchMutation.mutate
+index-C_vwvWcV.js:1530 [LeadSourceSelector] LinkedIn search mutation called with: {workspaceId: 'eaeb4b98-1ee7-46ce-b404-48e90584dd16', accountId: 'af0c88b2-87ca-4ad6-93f0-741c9b524acc', criteria: {…}, maxResults: 25}
+index-C_vwvWcV.js:1530 [LeadSourceSelector] LinkedIn search response: {success: true, job: {…}, stats: {…}}
+index-C_vwvWcV.js:1043 [WorkspaceContext] Fetching workspaces for user: af0c88b2-87ca-4ad6-93f0-741c9b524acc ryan.williams@tjruniversellc.com
+index-C_vwvWcV.js:1043 [WorkspaceContext] Owned workspaces: (3) [{…}, {…}, {…}] error: undefined
+index-C_vwvWcV.js:1043 [WorkspaceContext] Member workspaces: (2) [{…}, {…}] error: undefined
+index-C_vwvWcV.js:1043 [WorkspaceContext] Total workspaces found: 3 (3) ['TJR Universe', 'Test', 'TJR Universe Agents']

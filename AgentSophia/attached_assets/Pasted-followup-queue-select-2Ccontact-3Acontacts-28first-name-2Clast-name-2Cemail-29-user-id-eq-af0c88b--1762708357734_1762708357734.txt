@@ -1,0 +1,40 @@
+followup_queue?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c88b…:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+meeting_approvals?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c…:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+followup_queue?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c88b…:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+meeting_approvals?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c…:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+followup_queue?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c88b…:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+meeting_approvals?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c…:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+injected.js:204  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/followup_queue?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&status=eq.pending&order=created_at.desc&limit=20 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4293
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4314
+fulfilled @ @supabase_supabase-js.js?v=f1122888:4266
+Promise.then
+step @ @supabase_supabase-js.js?v=f1122888:4279
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4281
+__awaiter6 @ @supabase_supabase-js.js?v=f1122888:4263
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4304
+then @ @supabase_supabase-js.js?v=f1122888:90Understand this error
+injected.js:204  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/meeting_approvals?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&status=eq.pending&order=created_at.desc&limit=20 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4293
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4314
+fulfilled @ @supabase_supabase-js.js?v=f1122888:4266
+Promise.then
+step @ @supabase_supabase-js.js?v=f1122888:4279
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4281
+__awaiter6 @ @supabase_supabase-js.js?v=f1122888:4263
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4304
+then @ @supabase_supabase-js.js?v=f1122888:90Understand this error
+injected.js:204  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/followup_queue?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&status=eq.pending&order=created_at.desc&limit=20 400 (Bad Request)
+apply @ injected.js:204
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4293
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4314
+fulfilled @ @supabase_supabase-js.js?v=f1122888:4266
+Promise.then
+step @ @supabase_supabase-js.js?v=f1122888:4279
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4281
+__awaiter6 @ @supabase_supabase-js.js?v=f1122888:4263
+(anonymous) @ @supabase_supabase-js.js?v=f1122888:4304
+then @ @supabase_supabase-js.js?v=f1122888:90Understand this error
+injected.js:204  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/meeting_approvals?select=*%2Ccontact%3Acontacts%28first_name%2Clast_name%2Cemail%29&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&status=eq.pending&order=created_at.desc&limit=20 400 (Bad Request)

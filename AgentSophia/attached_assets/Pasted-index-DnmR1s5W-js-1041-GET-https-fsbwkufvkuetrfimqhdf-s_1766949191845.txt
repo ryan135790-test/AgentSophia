@@ -1,0 +1,69 @@
+index-DnmR1s5W.js:1041  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/connector_configs?select=*&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&workspace_id=eq.eaeb4b98-1ee7-46ce-b404-48e90584dd16 400 (Bad Request)
+(anonymous) @ index-DnmR1s5W.js:1041
+(anonymous) @ index-DnmR1s5W.js:1041
+l @ index-DnmR1s5W.js:1041
+Promise.then
+d @ index-DnmR1s5W.js:1041
+(anonymous) @ index-DnmR1s5W.js:1041
+i6e @ index-DnmR1s5W.js:1041
+(anonymous) @ index-DnmR1s5W.js:1041
+then @ index-DnmR1s5W.js:1019Understand this error
+index-DnmR1s5W.js:1457 Error fetching connector config: {code: '42703', details: null, hint: null, message: 'column connector_configs.workspace_id does not exist'}
+getUserConfig @ index-DnmR1s5W.js:1457
+await in getUserConfig
+queryFn @ index-DnmR1s5W.js:1538
+i @ index-DnmR1s5W.js:921
+g @ index-DnmR1s5W.js:921
+start @ index-DnmR1s5W.js:921
+fetch @ index-DnmR1s5W.js:921
+Gx @ index-DnmR1s5W.js:921
+setOptions @ index-DnmR1s5W.js:921
+(anonymous) @ index-DnmR1s5W.js:921
+a1 @ index-DnmR1s5W.js:40
+Jh @ index-DnmR1s5W.js:40
+(anonymous) @ index-DnmR1s5W.js:40
+_ @ index-DnmR1s5W.js:25
+T @ index-DnmR1s5W.js:25Understand this error
+index-DnmR1s5W.js:1043 [WorkspaceContext] Total workspaces found: 3 (3) ['TJR Universe', 'Test', 'TJR Universe Agents']
+index-DnmR1s5W.js:1041  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/connector_configs?select=*&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&workspace_id=eq.eaeb4b98-1ee7-46ce-b404-48e90584dd16 400 (Bad Request)
+(anonymous) @ index-DnmR1s5W.js:1041
+(anonymous) @ index-DnmR1s5W.js:1041
+l @ index-DnmR1s5W.js:1041
+Promise.then
+d @ index-DnmR1s5W.js:1041
+(anonymous) @ index-DnmR1s5W.js:1041
+i6e @ index-DnmR1s5W.js:1041
+(anonymous) @ index-DnmR1s5W.js:1041
+then @ index-DnmR1s5W.js:1019Understand this error
+index-DnmR1s5W.js:1457 Error fetching connector config: {code: '42703', details: null, hint: null, message: 'column connector_configs.workspace_id does not exist'}
+getUserConfig @ index-DnmR1s5W.js:1457
+await in getUserConfig
+Zne @ index-DnmR1s5W.js:1476
+(anonymous) @ index-DnmR1s5W.js:1538
+(anonymous) @ index-DnmR1s5W.js:1538
+a1 @ index-DnmR1s5W.js:40
+Jh @ index-DnmR1s5W.js:40
+(anonymous) @ index-DnmR1s5W.js:40
+_ @ index-DnmR1s5W.js:25
+T @ index-DnmR1s5W.js:25Understand this error
+index-DnmR1s5W.js:1476 Failed to load Office 365 config from database: {code: '42703', details: null, hint: null, message: 'column connector_configs.workspace_id does not exist'}
+Zne @ index-DnmR1s5W.js:1476
+await in Zne
+(anonymous) @ index-DnmR1s5W.js:1538
+(anonymous) @ index-DnmR1s5W.js:1538
+a1 @ index-DnmR1s5W.js:40
+Jh @ index-DnmR1s5W.js:40
+(anonymous) @ index-DnmR1s5W.js:40
+_ @ index-DnmR1s5W.js:25
+T @ index-DnmR1s5W.js:25Understand this error
+index-DnmR1s5W.js:1041  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/connector_configs?select=*&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&workspace_id=eq.eaeb4b98-1ee7-46ce-b404-48e90584dd16 400 (Bad Request)
+(anonymous) @ index-DnmR1s5W.js:1041
+(anonymous) @ index-DnmR1s5W.js:1041
+l @ index-DnmR1s5W.js:1041
+Promise.then
+d @ index-DnmR1s5W.js:1041
+(anonymous) @ index-DnmR1s5W.js:1041
+i6e @ index-DnmR1s5W.js:1041
+(anonymous) @ index-DnmR1s5W.js:1041
+then @ index-DnmR1s5W.js:1019Understand this error
+index-DnmR1s5W.js:1457 Error fetching connector config: {code: '42703', details: null, hint: null, message: 'column connector_configs.workspace_id does not exist'}

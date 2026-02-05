@@ -1,0 +1,62 @@
+| jobid | runid | job_pid | database | username | command                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | status | return_message                                                            | start_time                    | end_time                      |
+| ----- | ----- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------- | ----------------------------- | ----------------------------- |
+| 9     | 765   | 1815716 | postgres | postgres | 
+    SELECT net.http_post(
+      url := current_setting('app.settings.supabase_url') || '/functions/v1/agent-sophia-cron',
+      headers := jsonb_build_object(
+        'Content-Type', 'application/json',
+        'Authorization', 'Bearer ' || current_setting('app.settings.service_role_key')
+      ),
+      body := jsonb_build_object(
+        'source', 'pg_cron',
+        'timestamp', now()
+      ),
+      timeout_milliseconds := 120000
+    ) AS request_id;
+   | failed | ERROR:  unrecognized configuration parameter "app.settings.supabase_url"
+ | 2025-11-12 20:15:00.211873+00 | 2025-11-12 20:15:00.218314+00 |
+| 9     | 764   | 1815116 | postgres | postgres | 
+    SELECT net.http_post(
+      url := current_setting('app.settings.supabase_url') || '/functions/v1/agent-sophia-cron',
+      headers := jsonb_build_object(
+        'Content-Type', 'application/json',
+        'Authorization', 'Bearer ' || current_setting('app.settings.service_role_key')
+      ),
+      body := jsonb_build_object(
+        'source', 'pg_cron',
+        'timestamp', now()
+      ),
+      timeout_milliseconds := 120000
+    ) AS request_id;
+   | failed | ERROR:  unrecognized configuration parameter "app.settings.supabase_url"
+ | 2025-11-12 20:00:00.188787+00 | 2025-11-12 20:00:00.197457+00 |
+| 9     | 763   | 1814761 | postgres | postgres | 
+    SELECT net.http_post(
+      url := current_setting('app.settings.supabase_url') || '/functions/v1/agent-sophia-cron',
+      headers := jsonb_build_object(
+        'Content-Type', 'application/json',
+        'Authorization', 'Bearer ' || current_setting('app.settings.service_role_key')
+      ),
+      body := jsonb_build_object(
+        'source', 'pg_cron',
+        'timestamp', now()
+      ),
+      timeout_milliseconds := 120000
+    ) AS request_id;
+   | failed | ERROR:  unrecognized configuration parameter "app.settings.supabase_url"
+ | 2025-11-12 19:45:00.191913+00 | 2025-11-12 19:45:00.20348+00  |
+| 9     | 762   | 1814067 | postgres | postgres | 
+    SELECT net.http_post(
+      url := current_setting('app.settings.supabase_url') || '/functions/v1/agent-sophia-cron',
+      headers := jsonb_build_object(
+        'Content-Type', 'application/json',
+        'Authorization', 'Bearer ' || current_setting('app.settings.service_role_key')
+      ),
+      body := jsonb_build_object(
+        'source', 'pg_cron',
+        'timestamp', now()
+      ),
+      timeout_milliseconds := 120000
+    ) AS request_id;
+   | failed | ERROR:  unrecognized configuration parameter "app.settings.supabase_url"
+ | 2025-11-12 19:30:00.175854+00 | 2025-11-12 19:30:00.177892+00 |

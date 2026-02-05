@@ -1,0 +1,81 @@
+| event_message                                                                             | event_type | function_id                          | id                                   | level | timestamp        |
+| ----------------------------------------------------------------------------------------- | ---------- | ------------------------------------ | ------------------------------------ | ----- | ---------------- |
+| ✅ Follow-up approval created
+                                                             | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | f3f0f79d-5fa4-4797-bd25-2031cf840a02 | info  | 1762729597739000 |
+| 📋 Creating approval for decision type: send_follow_up
+                                   | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 4182ec83-c1e9-41d6-b0d3-8031260d3b2a | info  | 1762729597703000 |
+| ⚠️ Skipping agent_decision log for unknown sender (no contact_id)
+                        | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | a725d0e5-4f21-446e-a17e-9b41a5a41725 | info  | 1762729597703000 |
+| 📡 OpenAI response status: 200 OK
+                                                        | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 972e6cf7-20da-4432-8b05-e6320b58d4a4 | info  | 1762729597697000 |
+| 🔑 OpenAI API key present: true length: 164
+                                              | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | d1a88f59-793b-4814-8339-78e37fef504f | info  | 1762729592598000 |
+| 🤖 Calling OpenAI with model: gpt-4o
+                                                     | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | cde22cd7-604b-498e-94f4-e83c39ab1954 | info  | 1762729592598000 |
+| 🆕 Processing unknown sender: Ryan Williams (ryan.williams@ushanktech.com)
+               | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | f267f4c3-3129-44c6-8bf4-b4112baf70e5 | info  | 1762729592568000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+ | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | f4868ff4-d092-4d29-b159-c05dfb8e8437 | info  | 1762729592447000 |
+| Listening on http://localhost:9999/
+                                                      | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 399ddb11-afc3-4355-98ad-7707adfe1fae | info  | 1762729592438000 |
+| booted (time: 36ms)                                                                       | Boot       | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 27266160-7b3e-4ed2-8db6-a169d7566148 | log   | 1762729592435000 |
+| shutdown                                                                                  | Shutdown   | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 54f83a2e-ab16-4669-8336-c3f0a3777f77 | log   | 1762729005307000 |
+| shutdown                                                                                  | Shutdown   | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 0142269e-c06d-4622-bcf0-68e7f661563f | log   | 1762728945010000 |
+| ✅ Meeting approval created
+                                                               | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 1df93280-8fcf-408a-846b-a60218400b7f | info  | 1762728808179000 |
+| ⚠️ Skipping agent_decision log for unknown sender (no contact_id)
+                        | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | bcfd1cb7-6fed-4ad5-bb08-461c86b64086 | info  | 1762728808153000 |
+| 📋 Creating approval for decision type: schedule_meeting
+                                 | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | a9e16bce-51e4-4c7b-bd41-80ff094552e9 | info  | 1762728808153000 |
+| 📡 OpenAI response status: 200 OK
+                                                        | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | ae913863-cdb5-448b-af7f-4b7ca3a97cd9 | info  | 1762728808139000 |
+| 🔑 OpenAI API key present: true length: 164
+                                              | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | a6ed19fb-66df-4879-87f3-327d32b10732 | info  | 1762728805420000 |
+| 🤖 Calling OpenAI with model: gpt-4o
+                                                     | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | efa5e578-a9dd-4aa6-910a-d8466fec446f | info  | 1762728805420000 |
+| 🆕 Processing unknown sender: Ryan Williams (ryan.williams@ushanktech.com)
+               | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 13212cd1-f1e9-4646-aabf-f14269437079 | info  | 1762728805387000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+ | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | b3c426d4-e991-474e-a293-805af6cbed3a | info  | 1762728805300000 |
+| Listening on http://localhost:9999/
+                                                      | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | bb86b5da-7601-43e1-ab72-4d62a39a0891 | info  | 1762728805294000 |
+| booted (time: 29ms)                                                                       | Boot       | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 88dade0c-6bd9-4133-b8bc-88dc06485b96 | log   | 1762728805290000 |
+| shutdown                                                                                  | Shutdown   | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 35bd9aea-f069-4883-8984-f3aed6e9e768 | log   | 1762728768205000 |
+| ✅ Follow-up approval created
+                                                             | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | b25f1e00-e54e-4192-8194-9f9b36ce70b6 | info  | 1762728751290000 |
+| ⚠️ Skipping agent_decision log for unknown sender (no contact_id)
+                        | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 54b4adb1-7405-4311-9582-5db808700f0c | info  | 1762728751259000 |
+| 📋 Creating approval for decision type: send_follow_up
+                                   | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | bf00e622-afc2-44b3-a379-ffb0890e8761 | info  | 1762728751259000 |
+| 📡 OpenAI response status: 200 OK
+                                                        | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | dfc0b27d-b5f7-4725-af43-713822a1ae5b | info  | 1762728751248000 |
+| 🔑 OpenAI API key present: true length: 164
+                                              | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | b31ba4a2-02d0-469d-b575-21a3db0096a4 | info  | 1762728745123000 |
+| 🤖 Calling OpenAI with model: gpt-4o
+                                                     | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 36cf4bc9-e22e-4153-ad74-f92417ff6899 | info  | 1762728745123000 |
+| 🆕 Processing unknown sender: Ryan Williams (ryan.williams@ushanktech.com)
+               | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 6484d853-c5e9-45fd-b2f6-6c44511bceda | info  | 1762728745083000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+ | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 85d53d95-86ee-4c1b-92e4-a4799dd0dccc | info  | 1762728745001000 |
+| Listening on http://localhost:9999/
+                                                      | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 24442566-cc57-4984-aedb-ca2a93b416a5 | info  | 1762728744995000 |
+| booted (time: 29ms)                                                                       | Boot       | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 6ea05eda-c6c2-40ff-8715-b1d711f55350 | log   | 1762728744991000 |
+| ✅ Meeting approval created
+                                                               | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 7bf002a4-ae4f-4880-bf0c-b54d9d37ce90 | info  | 1762728571124000 |
+| ⚠️ Skipping agent_decision log for unknown sender (no contact_id)
+                        | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 6c18e39c-bdbb-457f-bf18-659a5815ff2d | info  | 1762728571086000 |
+| 📋 Creating approval for decision type: schedule_meeting
+                                 | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 81d3a6b5-e6a7-4361-b25a-f64fdec2c8b4 | info  | 1762728571086000 |
+| 📡 OpenAI response status: 200 OK
+                                                        | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 71b0984e-d85a-4450-b80d-69898646d28c | info  | 1762728571082000 |
+| 🔑 OpenAI API key present: true length: 164
+                                              | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 2cd0cbf3-9c36-4962-88f8-ce78d9acfc39 | info  | 1762728568268000 |
+| 🤖 Calling OpenAI with model: gpt-4o
+                                                     | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 5af0c247-5250-49a8-b31e-97882f3db387 | info  | 1762728568268000 |
+| 🆕 Processing unknown sender: Ryan Williams (ryan.williams@ushanktech.com)
+               | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 8c280e66-d3a1-4d19-9335-0ce8668c992a | info  | 1762728568241000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+ | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | b79ae44c-0857-40e7-90c1-211ac8acb5bd | info  | 1762728568198000 |
+| Listening on http://localhost:9999/
+                                                      | Log        | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | 721aaf79-e98d-4667-b172-f954f680d76d | info  | 1762728568190000 |
+| booted (time: 39ms)                                                                       | Boot       | 99ada52c-be25-44d4-8c51-ab4fad865ff1 | fd7bcce5-3876-47c6-8ab5-f594fdc98e2b | log   | 1762728568186000 |

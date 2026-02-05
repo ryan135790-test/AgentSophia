@@ -1,0 +1,85 @@
+modules = ["nodejs-20", "web", "postgresql-16"]
+[agent]
+expertMode = true
+integrations = ["javascript_openai:1.0.0", "javascript_openai_ai_integrations:1.0.0", "javascript_anthropic_ai_integrations:1.0.0"]
+
+[nix]
+channel = "stable-25_05"
+packages = ["supabase-cli", "xorg.libxcb", "xorg.libX11", "xorg.libXcomposite", "xorg.libXcursor", "xorg.libXdamage", "xorg.libXext", "xorg.libXfixes", "xorg.libXi", "xorg.libXrandr", "xorg.libXrender", "gtk3", "pango", "cairo", "gdk-pixbuf", "glib", "alsa-lib", "dbus", "nspr", "nss", "atk", "cups", "libdrm", "mesa", "libxkbcommon", "chromium"]
+
+[deployment]
+deploymentTarget = "vm"
+run = ["npx", "tsx", "server/index.ts"]
+build = ["npm", "run", "build"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Backend Server"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx vite --host 0.0.0.0"
+waitForPort = 5000
+
+[[workflows.workflow]]
+name = "Backend Server"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx tsx server/index.ts"
+waitForPort = 3001
+
+[[ports]]
+localPort = 3000
+externalPort = 3000
+
+[[ports]]
+localPort = 3001
+externalPort = 3001
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 5001
+externalPort = 3002
+
+
+[userenv]
+
+[userenv.shared]
+SUPER_ADMIN_EMAILS = "ryan.williams@tjruniversellc.com,troy.rachey@tjruniversellc.com"
+VITE_SUPER_ADMIN_EMAILS = "ryan.williams@tjruniversellc.com,troy.rachey@tjruniversellc.com"
+SUPABASE_URL = "https://fsbwkufvkuetrfimqhdf.supabase.co"
+
+[userenv.development]
+APP_URL = "https://edf4c841-eb3a-4bb4-a22e-0da7d0b212b1-00-3lm35z77qosh5.spock.replit.dev"
+LINKEDIN_DEV_MODE = "true"
+
+[userenv.production]
+APP_URL = "https://intellead-flow.replit.app"
+PORT = "5000"

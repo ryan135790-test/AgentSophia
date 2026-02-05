@@ -1,0 +1,48 @@
+index-C2bdMSB4.js:1041  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/connector_configs?select=*&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&workspace_id=eq.eaeb4b98-1ee7-46ce-b404-48e90584dd16 400 (Bad Request)
+(anonymous) @ index-C2bdMSB4.js:1041
+(anonymous) @ index-C2bdMSB4.js:1041
+l @ index-C2bdMSB4.js:1041
+Promise.then
+d @ index-C2bdMSB4.js:1041
+(anonymous) @ index-C2bdMSB4.js:1041
+i6e @ index-C2bdMSB4.js:1041
+(anonymous) @ index-C2bdMSB4.js:1041
+then @ index-C2bdMSB4.js:1019Understand this error
+index-C2bdMSB4.js:1457 ConnectorService: workspace_id column not found, falling back to user-only query
+getUserConfig @ index-C2bdMSB4.js:1457
+await in getUserConfig
+queryFn @ index-C2bdMSB4.js:1538
+i @ index-C2bdMSB4.js:921
+g @ index-C2bdMSB4.js:921
+start @ index-C2bdMSB4.js:921
+fetch @ index-C2bdMSB4.js:921
+Gx @ index-C2bdMSB4.js:921
+setOptions @ index-C2bdMSB4.js:921
+(anonymous) @ index-C2bdMSB4.js:921
+a1 @ index-C2bdMSB4.js:40
+Jh @ index-C2bdMSB4.js:40
+(anonymous) @ index-C2bdMSB4.js:40
+_ @ index-C2bdMSB4.js:25
+T @ index-C2bdMSB4.js:25Understand this warning
+index-C2bdMSB4.js:1041  GET https://fsbwkufvkuetrfimqhdf.supabase.co/rest/v1/connector_configs?select=*&user_id=eq.af0c88b2-87ca-4ad6-93f0-741c9b524acc&workspace_id=eq.eaeb4b98-1ee7-46ce-b404-48e90584dd16 400 (Bad Request)
+(anonymous) @ index-C2bdMSB4.js:1041
+(anonymous) @ index-C2bdMSB4.js:1041
+l @ index-C2bdMSB4.js:1041
+Promise.then
+d @ index-C2bdMSB4.js:1041
+(anonymous) @ index-C2bdMSB4.js:1041
+i6e @ index-C2bdMSB4.js:1041
+(anonymous) @ index-C2bdMSB4.js:1041
+then @ index-C2bdMSB4.js:1019Understand this error
+index-C2bdMSB4.js:1457 ConnectorService: workspace_id column not found, falling back to user-only query
+getUserConfig @ index-C2bdMSB4.js:1457
+await in getUserConfig
+Zne @ index-C2bdMSB4.js:1476
+(anonymous) @ index-C2bdMSB4.js:1538
+(anonymous) @ index-C2bdMSB4.js:1538
+a1 @ index-C2bdMSB4.js:40
+Jh @ index-C2bdMSB4.js:40
+(anonymous) @ index-C2bdMSB4.js:40
+_ @ index-C2bdMSB4.js:25
+T @ index-C2bdMSB4.js:25Understand this warning
+index-C2bdMSB4.js:1476 ✅ Loaded Office 365 config from database for workspace

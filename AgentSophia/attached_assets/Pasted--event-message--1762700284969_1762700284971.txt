@@ -1,0 +1,262 @@
+| event_message                                                                                                                                                                                                                                                                                                                                                                                        | event_type | function_id                          | id                                   | level | timestamp        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------ | ------------------------------------ | ----- | ---------------- |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 5aeb4e4b-2969-4a7a-9f4c-a276d03751f3 | error | 1762700158930000 |
+| 🆕 Processing unknown sender: Mike Gromacki (mike.gromacki@work4flow.com)
+                                                                                                                                                                                                                                                                                                                           | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 35194cbb-7b63-4bcf-b78c-7b55ee63c02c | info  | 1762700158781000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 6ece9652-6b32-49c4-8233-ea143f77f67f | info  | 1762700158737000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 06397d4b-3396-4040-8ed2-d2f6e6a4532f | info  | 1762700158729000 |
+| booted (time: 42ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 85e9a2db-36bd-4a1a-8578-22635d9e1eed | log   | 1762700158724000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | b0d44e91-8e3c-4a7e-a2b6-6238187c0b82 | error | 1762700158471000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | d32b132e-a5fe-4abc-aa40-c70e5b9713d1 | info  | 1762700157927000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 7edc6c0f-dfd0-4881-a88a-c80bc28e4204 | info  | 1762700157881000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 0ecee3f9-23bc-4bf5-bfdf-ff1971b027a4 | info  | 1762700157874000 |
+| booted (time: 46ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | f3a96aab-a931-432d-8ba7-9160556c39c9 | log   | 1762700157869000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | eaaee2e2-c399-40dc-9cbb-a9e1414ca133 | error | 1762700157669000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 569211da-c33e-49df-8505-a7795ade2821 | info  | 1762700157526000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 2421b8bb-47c9-490e-b6a8-a6ba6ab55212 | info  | 1762700157461000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 6fac36b7-0b7e-46ef-8756-ec943d834dcd | info  | 1762700157452000 |
+| booted (time: 44ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | d0cb78c3-0f2b-4730-bbb3-523cafd2a84a | log   | 1762700157447000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | da66200b-9021-40af-a470-27a1f9bd17ce | error | 1762700157240000 |
+| 🆕 Processing unknown sender: Kate Bampton (kate@ragverse.pro)
+                                                                                                                                                                                                                                                                                                                                      | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 1c137299-bdf6-43b5-a900-b4ccc7382f5f | info  | 1762700157097000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | cd56d964-f6db-40a3-bf42-1c9b88853517 | info  | 1762700157018000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | a26af564-983b-4af7-96a5-f1abe9bda8b8 | info  | 1762700157012000 |
+| booted (time: 30ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 88bcce65-700e-4b55-800d-2081890f4114 | log   | 1762700157008000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | f36b8d5e-52cb-4c0b-8179-6ba95729006a | error | 1762700156822000 |
+| 🆕 Processing unknown sender: sanjay gupta (sanjay.gupta@work4flow.com)
+                                                                                                                                                                                                                                                                                                                             | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 496d1683-f58a-405f-b6cc-8d7b3bbdf341 | info  | 1762700156722000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 79301860-8f57-48b4-b4ac-3bc3bce79c84 | info  | 1762700156666000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | ca365bd6-65ed-418b-ae50-5aff7eb7e366 | info  | 1762700156658000 |
+| booted (time: 30ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 6e4d1571-ce32-48f8-87a4-4e1826e7df1c | log   | 1762700156655000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | cb774cdc-a4d1-42a8-8c28-a71e82b34efa | error | 1762700156463000 |
+| 🆕 Processing unknown sender: Microsoft (microsoft-noreply@microsoft.com)
+                                                                                                                                                                                                                                                                                                                           | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 09071b5e-09c1-44ad-8c36-0217d96249d8 | info  | 1762700156308000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 62defa52-7616-4ac1-a43d-f5adccb2cffc | info  | 1762700156220000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 6bc0c5e0-5d02-4973-998d-7731f672b3de | info  | 1762700156214000 |
+| booted (time: 32ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 19bf3d19-17a7-4bda-962a-c67acc6c0560 | log   | 1762700156210000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 3fd65757-7119-4b84-b328-690d2c5eb0a9 | error | 1762700156020000 |
+| 🆕 Processing unknown sender: TJR Universe LLC (quickbooks@notification.intuit.com)
+                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | bf17337d-820e-488d-b65a-fdbcfc367356 | info  | 1762700155905000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 6a4d007e-6516-42c3-b57d-91f6b2cf2379 | info  | 1762700155863000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | e2f60bfa-30ef-4ba1-8543-8c8ff2bef261 | info  | 1762700155855000 |
+| booted (time: 41ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 0e9b1617-b15c-49ed-a3b5-41ab8483ac85 | log   | 1762700155850000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | ebbb40d0-76b6-4771-b0a3-028dbfab4f91 | error | 1762700155645000 |
+| 🆕 Processing unknown sender: Ryan Williams (/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=1D1CF8AE4BC44EC4B35028D09409CD8F-04711BFE-9F)
+                                                                                                                                                                                                                      | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | d8232a86-c395-4168-9ccb-67694b46937c | info  | 1762700155507000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 0e944340-4739-4f2a-91a8-9367e485fd65 | info  | 1762700155461000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | f95cbee8-dcd8-4301-b530-16a369ca8374 | info  | 1762700155455000 |
+| booted (time: 29ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 457b0858-19f1-4a5e-87ee-54665ddb5b7b | log   | 1762700155451000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 95bbb348-4088-4c47-9b8e-fdae8e4536bc | error | 1762700155262000 |
+| 🆕 Processing unknown sender: Kimberly Garrett (kimberly.garrett@connexiumnow.com)
+                                                                                                                                                                                                                                                                                                                  | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | a6794051-4ca7-40ba-ab05-ded9d2eef79f | info  | 1762700155114000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 2e17039b-8154-4db6-a8dc-6055df3ef0c4 | info  | 1762700155062000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | a0b5f46d-5956-44a8-8e55-6bc382489ce7 | info  | 1762700155053000 |
+| booted (time: 42ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 46f0c93c-6345-404c-b24f-cf19fe3ab191 | log   | 1762700155049000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 9f3763a2-7f5a-4dc1-8dc4-7cfdca71c426 | error | 1762700154851000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 596e9e8b-eae7-4822-a7c7-674bdd234add | info  | 1762700154756000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | fc2e35a1-3742-45bb-86b3-af7f723e5c72 | info  | 1762700154674000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 0286c340-a2eb-479a-9b83-ed9f650ea7c0 | info  | 1762700154666000 |
+| booted (time: 30ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | d80675a9-b415-446c-9144-5df625e86c08 | log   | 1762700154663000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 9809b4d5-8e30-41fe-81e1-7fcb2026e21f | error | 1762700154465000 |
+| 🆕 Processing unknown sender: Kimberly Garrett (kimberly.garrett@connexiumnow.com)
+                                                                                                                                                                                                                                                                                                                  | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 6f509527-264a-433e-97ab-5683137a7bac | info  | 1762700153514000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | e641ae2e-2c6c-4814-8e79-020989d0f0a5 | info  | 1762700153457000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | a6f93075-14cc-458f-998e-f4323ad76a7a | info  | 1762700153451000 |
+| booted (time: 30ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | fe5dd974-1ac1-4be8-babf-6d0a5d407d6d | log   | 1762700153447000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 2a3da0a0-ca85-4588-98df-488b0f137e42 | error | 1762700153252000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | f9552ab1-7f3b-4ce0-bfde-9a67d3d5e85b | info  | 1762700152621000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 6f7ac21b-43c3-414e-bedd-11ef914cbe9f | info  | 1762700152540000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 9f44448f-c71b-44ed-a706-d5dbabc44d63 | info  | 1762700152534000 |
+| booted (time: 30ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 4a922fd3-9784-4364-a8fb-32d394c43f74 | log   | 1762700152530000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | fce7dfa8-da3f-48c2-9b42-7d44f58cd377 | error | 1762700150741000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | a8636a52-c59b-4ccb-a004-6db7c23fd735 | info  | 1762700150633000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 281620ad-c8f1-4f9e-ba44-fecb4ef68c05 | info  | 1762700150536000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 7eb820ed-6073-4aa4-ac80-e8e3872e56d1 | info  | 1762700150528000 |
+| booted (time: 40ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | ab727fb9-7e74-4585-a9c8-800db69c4767 | log   | 1762700150523000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | b937a342-2f19-48fa-ad95-ffb7305651b8 | error | 1762700150275000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 2919d75c-ae86-4ed1-ba2d-7a75dba00f3b | info  | 1762700149649000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 3446cadd-e1e8-4fed-9ff0-72e608b484d1 | info  | 1762700149593000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 202413f0-265e-4c98-8ed0-dbc17bfef24d | info  | 1762700149565000 |
+| booted (time: 40ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | e0d7e3cd-4990-4c2d-a667-ed618b7fbec4 | log   | 1762700149561000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 7e15b296-56f1-4b15-86c1-1980f1ddea49 | error | 1762700149363000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 3d28bf91-77e1-4b7f-ae56-5f0f52f48ed0 | info  | 1762700149200000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 88c52f8f-f0c3-4a8e-a75c-ea67345d8b5d | info  | 1762700149143000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 5f3e7c22-2607-41de-849c-65a799f4bf2b | info  | 1762700149137000 |
+| booted (time: 33ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | ea897c17-c97b-450c-9609-f9505367f314 | log   | 1762700149133000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | ed43e384-b197-439a-b045-848569f2813f | error | 1762700148933000 |
+| 🆕 Processing unknown sender: Stacey Niermann (stacey@niermannestatesgroup.com)
+                                                                                                                                                                                                                                                                                                                     | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 35d28987-1546-46b1-aa0b-1ae8b94d686b | info  | 1762700148803000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | dfaf1e38-b96e-4d5c-947b-80e865ffe535 | info  | 1762700148759000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 1f496c97-6911-4cc1-ab13-cd64a2543436 | info  | 1762700148750000 |
+| booted (time: 34ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 6c5ee03d-861b-44df-9a28-f7f8ab075cf4 | log   | 1762700148746000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 9b5747da-0a02-4d8c-9957-af0c8a6d9da3 | error | 1762700148383000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 0349ca31-8079-4ce0-a575-35ed3029b7c2 | info  | 1762700148260000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 54a16773-181a-4f36-8d6e-14ea8af72849 | info  | 1762700148211000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 452a015e-5910-42eb-aeca-2fd558c04da1 | info  | 1762700148205000 |
+| booted (time: 30ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 870689ab-4465-4bd3-8e4f-d8034d2f3e99 | log   | 1762700148201000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 0f21f666-8ae9-44f6-8f4f-da4c5d62c56d | error | 1762700148008000 |
+| 🆕 Processing unknown sender: Stacey Niermann (stacey@niermannestatesgroup.com)
+                                                                                                                                                                                                                                                                                                                     | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 74d0e3ff-67e3-412b-8fd0-8515d9d7e670 | info  | 1762700147866000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | ec19340c-3e4b-4b4b-800b-9e121c5dc127 | info  | 1762700147819000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 6dc2faeb-c3ac-4314-a40f-df5c52731d88 | info  | 1762700147811000 |
+| booted (time: 39ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | f179dc17-b93b-4fdf-81e7-9c743693a0b5 | log   | 1762700147807000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 3742a3ac-69cd-43fe-8a6e-14e6c44010eb | error | 1762700147607000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 955a5f6e-3252-45cc-976a-597a4d4f0ea3 | info  | 1762700147127000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 9afb9c82-02ed-481a-982a-0a0908711922 | info  | 1762700147032000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | a06c9f81-9f08-4120-80b3-5eaa49431c68 | info  | 1762700147026000 |
+| booted (time: 30ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | ca51d2c9-20bd-48c7-b44d-6f78dcbb3aaf | log   | 1762700147022000 |
+| Error in agent-sophia-decision: Error: OpenAI API request failed
+    at analyzeResponseWithAI (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:251:11)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async Server.<anonymous> (file:///var/tmp/sb-compile-edge-runtime/source/index.ts:109:22)
+    at async Server.#respond (https://deno.land/std@0.168.0/http/server.ts:221:18)
+ | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 434a66b4-f21b-4188-bca1-e4234b69a6c9 | error | 1762700146763000 |
+| 🆕 Processing unknown sender: troy.rachey@tjruniversellc.com (troy.rachey@tjruniversellc.com)
+                                                                                                                                                                                                                                                                                                       | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | e8d59921-bb02-46cd-84a7-fd9b8322f34d | info  | 1762700145732000 |
+| 🤖 Decision engine called for user af0c88b2-87ca-4ad6-93f0-741c9b524acc, contact unknown
+                                                                                                                                                                                                                                                                                                            | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 10c3c985-49f7-4adc-a459-68e084403f8f | info  | 1762700145673000 |
+| Listening on http://localhost:9999/
+                                                                                                                                                                                                                                                                                                                                                                 | Log        | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | a9b8235d-b9cf-4aa5-970b-3029d45c61a4 | info  | 1762700145666000 |
+| booted (time: 31ms)                                                                                                                                                                                                                                                                                                                                                                                  | Boot       | 31f7b271-cec1-48f9-92ab-f9d25d5f97bd | 39acceb1-48e9-4901-afd1-9dd384944fe5 | log   | 1762700145663000 |

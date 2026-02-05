@@ -1,0 +1,82 @@
+# LinkedIn Connection Stability - Review & Fixes
+
+## Executive Summary
+
+Agent Sophia uses **two different LinkedIn connection systems**, both of which have issues that cause connections to drop:
+
+1. **OAuth (social_connections)** – For LinkedIn API posting; tokens expire with no refresh
+2. **Puppeteer/Cookies (linkedin_puppeteer_settings + user_linkedin_settings)** – For automation; keep-alive has bugs
+
+---
+
+## Issue 1: Session Keep-Alive Updates Wrong Table (Critical Bug)
+
+**Location:** `server/lib/linkedin-session-keepalive.ts`
+
+**Problem:** When keep-alive successfully pings LinkedIn and gets fresh cookies, it **always** updates `user_linkedin_settings`. But sessions are often stored in `linkedin_puppeteer_settings` (where quick-login and manual paste save cookies). The automation/scraper reads from `linkedin_puppeteer_settings` first, so it never sees the refreshed cookies.
+
+**Result:** Even when keep-alive runs successfully, automation continues using stale cookies and eventually fails.
+
+**Fix:** Update the same table the cookies were read from. See implementation below.
+
+---
+
+## Issue 2: No OAuth Token Refresh for LinkedIn
+
+**Location:** 
+- `supabase/functions/linkedin-oauth/index.ts` – Does not store `refresh_token`
+- `server/routes-integrations.ts` – Stores `refresh_token` but no refresh logic exists
+- `server/lib/user-channel-apis.ts` – Has refresh for Gmail/Office365, but **not LinkedIn**
+
+**Problem:** LinkedIn OAuth access tokens expire in **60 days**. There is no automatic refresh. When the token expires, the connection silently fails. Gmail and Office 365 both have `refresh_token` flows.
+
+**Note:** LinkedIn refresh tokens are only available for approved partners. Standard apps may not receive them. If your app gets a refresh token, implement a refresh flow similar to Office 365.
+
+**Docs reference:** `LINKEDIN_OAUTH_SETUP.md` line 88: *"Implement token refresh logic in production"* – This was never implemented.
+
+---
+
+## Issue 3: Keep-Alive Skips Manual Sessions Entirely
+
+**Location:** `server/lib/linkedin-session-keepalive.ts` lines 358–369
+
+**Problem:** Sessions with `sessionSource === 'manual'` or `'unknown'` are **never** pinged. The comment explains: *"Navigating to LinkedIn from a different IP (Replit server) will invalidate the session."* So manual/cookie-paste connections get no keep-alive and expire after 24–48 hours of inactivity.
+
+**Impact:** Users who connect via manual cookie paste will see connections drop frequently.
+
+**Possible improvements:**
+- Use the **same proxy** the user originally connected from (if available)
+- Or clearly warn users that manual sessions require reconnection every 1–2 days
+
+---
+
+## Issue 4: Puppeteer Session Query May Return Wrong User
+
+**Location:** `server/lib/linkedin-session-keepalive.ts` – `getLinkedInSessionWithSource`
+
+**Problem:** The `linkedin_puppeteer_settings` query filters only by `workspace_id`, not `user_id`. In workspaces with multiple users, this can return the wrong user’s session.
+
+**Fix:** Add `user_id` filter when fetching from `linkedin_puppeteer_settings`.
+
+---
+
+## Issue 5: Redirect URI Inconsistency
+
+**Locations:**
+- Frontend: `/oauth/callback/linkedin` (`src/lib/linkedin-oauth.ts`)
+- Docs: `/oauth/linkedin/callback` (`LINKEDIN_OAUTH_SETUP.md`)
+- App.tsx handles both routes
+
+**Problem:** Documentation and code paths are inconsistent. The LinkedIn app must have the redirect URI configured exactly; mismatches cause OAuth failures.
+
+**Fix:** Standardize on one URI and update both the app and docs. Use the same value in the LinkedIn Developer Portal.
+
+---
+
+## Recommended Fixes (Priority Order)
+
+1. **Critical:** Fix session keep-alive to update the correct table (`linkedin_puppeteer_settings` when that’s the source).
+2. **High:** Add `user_id` filter to puppeteer session lookup in keep-alive.
+3. **High:** Add proactive token expiry checks and prompt users to reconnect before 60 days (or implement refresh if tokens are available).
+4. **Medium:** Align redirect URIs and documentation.
+5. **Medium:** Document or improve behavior for manual sessions (no keep-alive from server).
